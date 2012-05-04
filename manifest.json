@@ -1,0 +1,17 @@
+{
+  "name": "X-Fake-For",
+  "version": "0.1",
+  "manifest_version": 2,
+  "description": "Adds the X-Forwarded-For header to requests to fool some site's geo-blocking attempts. Punch the button to turn it on; punch it again to turn it off.",
+  "browser_action": {
+    "default_icon": "icon-off.png"
+  },
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "*://*/*"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
